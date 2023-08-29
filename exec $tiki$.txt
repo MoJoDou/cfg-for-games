@@ -1,0 +1,55 @@
+ПАРАМЕТРЫ ЗАПУСКА И КОМАНДЫ:
+-cl-tickrate 128 -novid -freq 240 -tickrate 128 +cl_updaterate 128 +cl_interp 0 +cl_interp_ratio 1 -cl_cmdrate 128 -nod3d9ex1
+
+net_graph 1 - Мониторинг фпс
+fps_max 300 (Если меньше 300 кадров)
+fps_max 0 (Больше 300 кадров)
+
+cl_detail_avoid_recover_speed 0
+cl_detail_avoid_force 0 
+func_break_max_pieces 0 
+net_allow_multicast 0 
+r_drawtracers_firstperson 0 
+r_dynamic 0
+mat_queue_mode -1
+mat_monitorgamma 1.6		// максимальный уровень яркости
+mat_monitorgamma_tv_enabled 1	// повышенная яркость
+mat_grain_scale_override 0	// отключить зернистость плёнки
+bind w "+forward; r_cleardecals"// удаляет декали при каждом движении вперёд
+bind mwheelup +jump		// прыжок для распрыжки
+bind space +jump		// прыжок для всего остального
+bind f10 disconnect		// отключиться от сервера
+bind f11 quit			// полностью выйти из игры
+
+voice_loopback 1	// слышен собственный голос по микрофону
+cl_hud_color 9          /бирюзовый худ
+
+
+fog_override "0"
+fog_end "0"
+fog_start "0"
+fog_endskybox "0"
+fog_enable_water_fog "0"
+mat_postprocess_enable "0"
+mat_bloomamount_rate "0"
+r_drawtracers "0"
+r_drawtracers_firstperson "0"
+r_dynamic "0"
+r_eyegloss "0"
+r_eyemove "0"
+mat_queue_mode "2"
+cl_threaded_bone_setup "1"
+cl_disablehtmlmotd 1
+cl_downloadfilter nosound
+cl_downloadfilter nosound
+cl_timeout 30
+r_drawparticles 0
+cl_resend 1.5
+cl_disablefreezecam 1
+muzzleflash_light 0
+sv_forcepreload 1
+sys_antialiasing 0
+sys_aspectratio -1
+sys_refldetail 0
+r_cheapwaterend 1
+r_cheapwaterstart 1
